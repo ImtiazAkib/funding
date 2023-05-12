@@ -1,0 +1,54 @@
+.common-form-container {
+  width: 495px;
+  height: 535px;
+  padding: 20px 50px;
+}
+
+.common-single-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.common-single-box label {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.common-single-box input,
+.common-single-box textarea,
+.green-select {
+  border: 1px solid gray;
+  padding: 5px 10px;
+  margin: 10px 0px;
+  color: #168806;
+}
+
+.common-single-box input:focus,
+.common-single-box textarea:focus,
+.green-select:focus {
+  outline: none;
+}
+
+.green-select option,
+.green-select {
+  font-size: 14px;
+}
+
+.message-btn {
+  width: 100%;
+  background-color: #168806;
+  padding: 15px 0px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.message-btn:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 650px) {
+  .common-form-container {
+    padding: 10px 20px;
+    width: 100%;
+    height: 450px;
+  }
+}

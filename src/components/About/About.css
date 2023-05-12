@@ -1,0 +1,21 @@
+.about-head {
+  padding-left: 151px;
+  padding-bottom: 40px;
+}
+@media screen and (max-width: 650px) {
+  .about-head {
+    padding-left: 0px;
+  }
+  .about-head h1 {
+    font-size: 38px;
+  }
+  .about-head h2 {
+    font-size: 20px;
+  }
+  .about-head h3 {
+    font-size: 15px;
+  }
+  .about {
+    padding: 0px 15px;
+  }
+}

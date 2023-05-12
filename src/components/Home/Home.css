@@ -1,0 +1,106 @@
+.bg-color {
+  background-color: #168806;
+}
+.autoplay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 780px;
+  background-color: black;
+  opacity: 0.4;
+}
+
+.carousel-info {
+  position: absolute;
+  top: 300px;
+  font-size: 40px;
+  width: 40ch;
+  padding-left: 100px;
+  color: #fff;
+  text-shadow: 2px 0px 4px rgba(206, 89, 55, 0.7);
+}
+@keyframes moveSentence {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.moving-sentence {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #f38209;
+  padding: 10px 0px;
+}
+
+.moving-sentence__text {
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  animation: moveSentence 40s linear infinite;
+}
+
+.carousel-form {
+  position: absolute;
+  top: 100px;
+  right: 60px;
+}
+
+.feature-info ul {
+  padding-left: 20px;
+}
+
+.feature-info ul li {
+  list-style: disc;
+}
+
+.container {
+  position: relative;
+}
+
+.background-image {
+  background-image: url("../../../public/images/feature.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000;
+  display: flex;
+  justify-content: flex-end;
+}
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.content {
+  width: 70ch;
+  padding: 150px 40px;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (max-width: 650px) {
+  .carousel-form {
+    position: relative;
+    top: 0;
+  }
+  .carousel-info {
+    padding: 0;
+    width: 30ch;
+    font-size: 20px;
+    top: 200px;
+  }
+  .carousel {
+    height: 400px;
+  }
+  .autoplay {
+    display: none;
+  }
+}
