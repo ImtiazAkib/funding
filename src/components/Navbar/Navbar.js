@@ -10,7 +10,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const navbarHeight = 50;
+      const navbarHeight = 220;
       const scrollPosition = window.pageYOffset;
 
       if (scrollPosition > navbarHeight) {
@@ -29,10 +29,16 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="responsive-nav">
-        <div className="head-container">
-          <div className="head-top">
-            <img src="/images/logo.png" alt="logo" className="logo" />
+      <div className={`responsive-nav ${isSticky ? "sticky" : ""}`}>
+        <div className={`head-container ${isSticky ? "new-container" : ""}`}>
+          <div className={`head-top ${isSticky ? "new-top" : ""}`}>
+            <img
+              src={`${
+                isSticky ? "/images/transparent-logo.png" : "/images/logo.png"
+              }`}
+              alt="logo"
+              className="logo"
+            />
           </div>
         </div>
         <div className="">
@@ -40,11 +46,7 @@ const Navbar = () => {
             <GiHamburgerMenu />
           </button>
         </div>
-        <div
-          className={`nav-container ${isSticky ? "sticky" : ""} ${
-            toggle ? "hide" : ""
-          }`}
-        >
+        <div className={`nav-container  ${toggle ? "hide" : ""}`}>
           <div className={`nav bg-color`}>
             <ul>
               <NavLink

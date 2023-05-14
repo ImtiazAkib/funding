@@ -1,16 +1,27 @@
 .responsive-nav {
-  background-image: url("../../../public/images/feature.jpg");
   overflow: hidden;
 }
 
 .head-container {
+  background-image: url("../../../public/images/feature.jpg");
   display: flex;
   justify-content: center;
+}
+.new-container {
+  background-image: none;
+  background-color: black;
 }
 .head-top {
   width: 130px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.new-top {
+  width: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: all 0.5s ease-in;
 }
 
 .show-btn {
