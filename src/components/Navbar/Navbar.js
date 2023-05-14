@@ -6,6 +6,7 @@ import "./Navbar.css";
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [toggle, setToggle] = useState(true);
+  const [dropShow, setDropShow] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,38 +59,16 @@ const Navbar = () => {
               >
                 <li>About Us</li>
               </NavLink>
+
               <NavLink
                 className={({ isActive }) => (isActive ? "active" : "")}
                 to="/products"
+                onMouseEnter={() => setDropShow(true)}
+                onMouseLeave={() => setDropShow(false)}
               >
                 <li>Products</li>
-                {/* <ul>
-                  <NavLink
-                    className={({ isActive }) => (isActive ? "active" : "")}
-                    to="/gmf-application"
-                  >
-                    <li>3 Minute Application</li>
-                  </NavLink>
-                  <NavLink
-                    className={({ isActive }) => (isActive ? "active" : "")}
-                    to="/gmf-application"
-                  >
-                    <li>3 Minute Application</li>
-                  </NavLink>
-                  <NavLink
-                    className={({ isActive }) => (isActive ? "active" : "")}
-                    to="/gmf-application"
-                  >
-                    <li>3 Minute Application</li>
-                  </NavLink>
-                  <NavLink
-                    className={({ isActive }) => (isActive ? "active" : "")}
-                    to="/gmf-application"
-                  >
-                    <li>3 Minute Application</li>
-                  </NavLink>
-                </ul> */}
               </NavLink>
+
               <NavLink
                 className={({ isActive }) => (isActive ? "active" : "")}
                 to="/gmf-application"
@@ -117,6 +96,68 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
+        <ul
+          className={`dropdown bg-green-900 ${
+            dropShow ? "dropShow" : "dropHide"
+          }`}
+          onMouseEnter={() => setDropShow(true)}
+          onMouseLeave={() => setDropShow(false)}
+        >
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "")}
+            to="/unsecured-loans"
+          >
+            <li>Unsecured Loans</li>
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "")}
+            to="/merchant-cash-advance"
+          >
+            <li>Merchant Cash Advance</li>
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "")}
+            to="/equipment-financing"
+          >
+            <li>Equipment Financing</li>
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "")}
+            to="/lines-of-credit"
+          >
+            <li>Lines Of Credit</li>
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "")}
+            to="/credit-card-processing"
+          >
+            <li>Credit Card Processing</li>
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "")}
+            to="/credit-repair"
+          >
+            <li>Credit Repair</li>
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "")}
+            to="/debt-consolidation"
+          >
+            <li>Debt Consolidation</li>
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "")}
+            to="/term-loans"
+          >
+            <li>Term Loans</li>
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "")}
+            to="/identity-theft"
+          >
+            <li>Identity Theft</li>
+          </NavLink>
+        </ul>
       </div>
     </>
   );

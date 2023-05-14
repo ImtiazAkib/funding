@@ -70,7 +70,11 @@ const Form = (props) => {
             </div>
           </div>
 
-          <input type="submit" value="Get your lone" className="submit-btn" />
+          <input
+            type="submit"
+            value="Get your Loan"
+            className="submit-btn uppercase"
+          />
         </div>
       </form>
     </div>

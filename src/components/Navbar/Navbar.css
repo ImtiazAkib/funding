@@ -1,3 +1,8 @@
+.responsive-nav {
+  background-image: url("../../../public/images/feature.jpg");
+  overflow: hidden;
+}
+
 .head-container {
   display: flex;
   justify-content: center;
@@ -5,6 +10,7 @@
 .head-top {
   width: 130px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .show-btn {
@@ -39,6 +45,24 @@
   transition: all 0.5s ease-in;
 }
 
+.dropdown {
+  flex-direction: column;
+  position: absolute;
+  z-index: 5;
+  left: 29%;
+  padding: 10px 20px;
+  color: white;
+}
+.dropdown li {
+  padding-bottom: 10px;
+}
+.dropShow {
+  display: block;
+}
+.dropHide {
+  display: none;
+}
+
 @media screen and (max-width: 650px) {
   .responsive-nav {
     display: flex;
@@ -66,5 +90,11 @@
   }
   .hide {
     display: none;
+  }
+  .dropdown {
+    left: 0;
+    top: 40%;
+    height: 200px;
+    overflow: scroll;
   }
 }
