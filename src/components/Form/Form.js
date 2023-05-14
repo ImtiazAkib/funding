@@ -2,7 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import "./Form.css";
 
-const Form = () => {
+const Form = (props) => {
   const {
     register,
     formState: { errors },
@@ -58,11 +58,15 @@ const Form = () => {
           <div className="single-box">
             <label htmlFor="State">State</label>
             <div className=" glass-select">
-              <select {...register("gender")}>
-                <option value="female">female</option>
-                <option value="male">male</option>
-                <option value="other">other</option>
-              </select>
+              {props.info && (
+                <select {...register("state")}>
+                  {props.info.options.map((info) => (
+                    <option key={Math.random() * 10} value={info}>
+                      {info}
+                    </option>
+                  ))}
+                </select>
+              )}
             </div>
           </div>
 

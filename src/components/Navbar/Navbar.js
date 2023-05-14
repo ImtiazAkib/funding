@@ -63,10 +63,36 @@ const Navbar = () => {
                 to="/products"
               >
                 <li>Products</li>
+                {/* <ul>
+                  <NavLink
+                    className={({ isActive }) => (isActive ? "active" : "")}
+                    to="/gmf-application"
+                  >
+                    <li>3 Minute Application</li>
+                  </NavLink>
+                  <NavLink
+                    className={({ isActive }) => (isActive ? "active" : "")}
+                    to="/gmf-application"
+                  >
+                    <li>3 Minute Application</li>
+                  </NavLink>
+                  <NavLink
+                    className={({ isActive }) => (isActive ? "active" : "")}
+                    to="/gmf-application"
+                  >
+                    <li>3 Minute Application</li>
+                  </NavLink>
+                  <NavLink
+                    className={({ isActive }) => (isActive ? "active" : "")}
+                    to="/gmf-application"
+                  >
+                    <li>3 Minute Application</li>
+                  </NavLink>
+                </ul> */}
               </NavLink>
               <NavLink
                 className={({ isActive }) => (isActive ? "active" : "")}
-                to="/application"
+                to="/gmf-application"
               >
                 <li>3 Minute Application</li>
               </NavLink>
@@ -78,7 +104,7 @@ const Navbar = () => {
               </NavLink>
               <NavLink
                 className={({ isActive }) => (isActive ? "active" : "")}
-                to="/news"
+                to="/reviews"
               >
                 <li>News & Reviews</li>
               </NavLink>

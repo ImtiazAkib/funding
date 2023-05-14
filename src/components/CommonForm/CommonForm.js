@@ -2,7 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import "./CommonForm.css";
 
-const CommonForm = () => {
+const CommonForm = (props) => {
   const {
     register,
     formState: { errors },
@@ -31,13 +31,17 @@ const CommonForm = () => {
           </div>
 
           <div className="common-single-box">
-            <label htmlFor="State">State:</label>
+            {props.info.select && (
+              <label htmlFor={props.info.select}>{props.info.select}</label>
+            )}
 
-            <select {...register("gender")} className="green-select">
-              <option value="female">female</option>
-              <option value="male">male</option>
-              <option value="other">other</option>
-            </select>
+            {props.info.options && (
+              <select {...register(props.info.reg)} className="green-select">
+                {props.info.options.map((option) => (
+                  <option value={option}>{option}</option>
+                ))}
+              </select>
+            )}
           </div>
 
           <div className="common-single-box">

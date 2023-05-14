@@ -1,19 +1,19 @@
 import React from "react";
-import "./About.css";
 import { NavLink } from "react-router-dom";
+import "./Products.css";
 
-const About = () => {
+const Products = () => {
   return (
     <div className=" flex flex-col mt-24 mb-24 about">
       <div className="about-head">
-        <h1 className="text-5xl uppercase pb-8">PRODUCTS</h1>
-        <h2 className="text-3xl pb-7">BUSINESS FUNDING</h2>
+        <h1 className="text-5xl uppercase pb-8">About us</h1>
+        <h2 className="text-3xl pb-7">BUSINESS FINANCING OPTIONS</h2>
         <h3 className="text-base">
-          A VARIETY OF OPTIONS TO SUIT EVERY BUSINESS
+          PUT YOUR TRUST IN GENERAL MERCHANT FUNDING
         </h3>
       </div>
       <div className="md:flex  md:w-4/5 self-center text-sm leading-6">
-        <p className="md:pr-5">
+        <p className="md:pr-5 products-info">
           Kesef Capital Group is a financing firm specializing in providing
           business financing options to small and medium sized businesses
           throughout the United States. The companies founders have been on the
@@ -30,24 +30,28 @@ const About = () => {
           capital to expand their operations, hire new employees, add locations,
           purchase equipment and consolidate debt.
         </p>
-        <p>
-          We offer a wide variety of business financing options and business
-          loans to meet the array of needs of our customers. These services
-          include Unsecured Loans, Merchant Cash Advances, Secured Loans and
-          Equipment Financing. We understand that business owners have varied
-          credit profiles, cash flow and revenue. We can quickly and easily
-          process applications. Our experienced team of dedicated employees will
-          work diligently to get you approved and make the process simple and
-          stress free. <br /> <br /> We work hard on a daily basis to achieve
-          our main goal. This has always been to provide REAL business solutions
-          for the people who need them. We strive to work efficiently, honestly
-          and without prejudice. This customer driven formula has proven itself
-          time and time again. Put your trust in General Merchant Funding to
-          help your company thrive and grow today.
-        </p>
+        <div className="md:pl-28 pl-10 products-links">
+          <ul>
+            <NavLink to="/unsecured-loans">
+              <li>Unsecured Loans</li>
+            </NavLink>
+            <NavLink to="/merchant-cash-advance">
+              <li>Merchant Cash Advance</li>
+            </NavLink>
+            <NavLink to="/term-loans">
+              <li>Term Loans</li>
+            </NavLink>
+            <NavLink to="/equipment-financing">
+              <li>Equipment Financing</li>
+            </NavLink>
+            <NavLink to="/line-of-credit">
+              <li>Line Of Credit</li>
+            </NavLink>
+          </ul>
+        </div>
       </div>
     </div>
   );
 };
 
-export default About;
+export default Products;

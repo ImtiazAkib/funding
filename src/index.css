@@ -14,3 +14,47 @@ body {
 * {
   box-sizing: border-box;
 }
+
+:root {
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Common Style */
+
+.common-page-container div p {
+  width: 70ch;
+}
+.common-page-container div h2 {
+  width: 60ch;
+}
+
+.common-page-list li {
+  list-style: disc;
+  margin-left: 40px;
+  margin-top: 5px;
+  width: 60ch;
+}
+
+@media screen and (max-width: 650px) {
+  .common-page-container {
+    padding: 0px 20px 60px 20px;
+  }
+  .common-page-container div p {
+    width: 35ch;
+  }
+  .common-page-container div h1 {
+    font-size: 22px;
+  }
+  .common-page-container div h2 {
+    font-size: 15px;
+    margin: 20px 0px;
+    width: 35ch;
+  }
+  .common-page-list li {
+    width: 35ch;
+    margin-left: 10px;
+  }
+}
+
+/* Common Style */

@@ -1,0 +1,11 @@
+.gmf-left {
+  width: 60ch;
+}
+@media screen and (max-width: 650px) {
+  .gmf-left {
+    width: 33ch;
+  }
+  .gmf-container {
+    padding: 20px 10px;
+  }
+}
