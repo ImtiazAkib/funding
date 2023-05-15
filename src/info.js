@@ -169,7 +169,6 @@ export const formForState = {
   select: "State:",
   reg: "state",
   options: [
-    "Select your State",
     "Alabama",
     "Alaska",
     "Arizona",

@@ -1,14 +1,24 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import "./Form.css";
+import emailjs from "@emailjs/browser";
 
 const Form = (props) => {
   const {
     register,
     formState: { errors },
     handleSubmit,
+    reset,
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+
+  const onSubmit = (data) => {
+    emailjs
+      .send("service_5v84lzc", "template_cvs6rwg", data, "f8WQ6GcdeFOqe3dMj")
+      .then((res) => console.log("ok"))
+      .catch((err) => console.log(err));
+    reset();
+  };
+
   return (
     <div>
       <form onSubmit={handleSubmit(onSubmit)} className=" text-white">
@@ -51,6 +61,21 @@ const Form = (props) => {
             {errors.phone && (
               <p role="alert" className="text-red-300">
                 {errors.phone?.message}
+              </p>
+            )}
+          </div>
+          <div className="single-box">
+            <label htmlFor="Loan Amount">Loan Amount</label>
+            <input
+              type="number"
+              {...register("loanAmount", {
+                required: "Loan Amount is required",
+              })}
+              aria-invalid={errors.loanAmount ? "true" : "false"}
+            />
+            {errors.loanAmount && (
+              <p role="alert" className="text-red-300">
+                {errors.loanAmount?.message}
               </p>
             )}
           </div>

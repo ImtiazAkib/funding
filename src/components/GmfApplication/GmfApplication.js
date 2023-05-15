@@ -1,14 +1,24 @@
 import React from "react";
 import "./GmfApplication.css";
 import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
 
 const GmfApplication = () => {
   const {
     register,
     formState: { errors },
     handleSubmit,
+    reset,
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+
+  const onSubmit = (data) => {
+    emailjs
+      .send("service_5v84lzc", "template_bhm28fq", data, "f8WQ6GcdeFOqe3dMj")
+      .then((res) => console.log("ok"))
+      .catch((err) => console.log(err));
+    reset();
+  };
+
   return (
     <div className="gmf-container md:flex justify-evenly  md:mt-64 mt-40 md:pl-9">
       <div className="gmf-left">
@@ -32,11 +42,12 @@ const GmfApplication = () => {
         </p>
       </div>
       <div>
-        <form onSubmit={handleSubmit(onSubmit)} className=" ">
+        <form onSubmit={handleSubmit(onSubmit)}>
           <div className="common-form-container">
             <div className="common-single-box">
               <label htmlFor="Requested Amount">Requested Amount*</label>
               <input
+                type="number"
                 {...register("requestedAmount", {
                   required: "Requested Amount is required",
                 })}
@@ -53,6 +64,7 @@ const GmfApplication = () => {
                 Monthly Business Revenue*
               </label>
               <input
+                type="number"
                 {...register("monthlyBusinessRevenue", {
                   required: "Monthly Business Revenue is required",
                 })}
@@ -69,25 +81,29 @@ const GmfApplication = () => {
               <label htmlFor="purpose">Purpose of funding?*</label>
 
               <select {...register("purpose")} className="green-select">
-                <option value="expansion">Expansion</option>
-                <option value="project">Fund Existing Project</option>
-                <option value="payroll">Payroll</option>
-                <option value="debt">Pay Outstanding Debt</option>
-                <option value="consolidation">Consolidation</option>
-                <option value="venture">Start a New Venture</option>
-                <option value="cash">Improve Cash Flow</option>
-                <option value="other">Other</option>
+                <option value="Expansion">Expansion</option>
+                <option value="Fund Existing Project">
+                  Fund Existing Project
+                </option>
+                <option value="Payroll">Payroll</option>
+                <option value="Pay Outstanding Debt">
+                  Pay Outstanding Debt
+                </option>
+                <option value="Consolidation">Consolidation</option>
+                <option value="Start a New Venture">Start a New Venture</option>
+                <option value="Improve Cash Flow">Improve Cash Flow</option>
+                <option value="Other">Other</option>
               </select>
             </div>
             <div className="common-single-box">
               <label htmlFor="about">How did you hear about Us?*</label>
 
               <select {...register("about")} className="green-select">
-                <option value="search">Google Search</option>
-                <option value="engine">Other Search Engine</option>
-                <option value="campaign">Email Campaign</option>
-                <option value="mail">Direct Mail</option>
-                <option value="other">Other</option>
+                <option value="Google Search">Google Search</option>
+                <option value="Other Search Engine">Other Search Engine</option>
+                <option value="Email Campaign">Email Campaign</option>
+                <option value="Direct Mail">Direct Mail</option>
+                <option value="Other">Other</option>
               </select>
             </div>
 

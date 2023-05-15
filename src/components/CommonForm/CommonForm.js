@@ -1,17 +1,26 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import "./CommonForm.css";
+import emailjs from "@emailjs/browser";
 
 const CommonForm = (props) => {
   const {
     register,
     formState: { errors },
     handleSubmit,
+    reset,
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    emailjs
+      .send("service_5v84lzc", "template_cvs6rwg", data, "f8WQ6GcdeFOqe3dMj")
+      .then((res) => console.log("ok"))
+      .catch((err) => console.log(err));
+    reset();
+  };
+
   return (
     <div>
-      <form onSubmit={handleSubmit(onSubmit)} className=" ">
+      <form onSubmit={handleSubmit(onSubmit)}>
         <div className="common-form-container">
           <div className="common-single-box">
             <label htmlFor="Name">Name(required)</label>
