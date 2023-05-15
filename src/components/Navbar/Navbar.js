@@ -10,7 +10,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const navbarHeight = 0;
+      const navbarHeight = 200;
       const scrollPosition = window.pageYOffset;
 
       if (scrollPosition > navbarHeight) {
@@ -32,7 +32,11 @@ const Navbar = () => {
       <div className={`responsive-nav ${isSticky ? "sticky" : ""}`}>
         <div className={`head-container`}>
           <div className={`head-top ${isSticky ? "new-top" : ""}`}>
-            <img src="/images/logo.png" alt="logo" className="logo" />
+            <img
+              src="/images/transparent-logo.png"
+              alt="logo"
+              className="logo"
+            />
           </div>
         </div>
         <div className="">

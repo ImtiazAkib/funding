@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-color text-white dark:bg-gray-900">
+    <footer className="bg-dark text-white">
       <div className="container p-6 mx-auto">
-        <div className="lg:flex lg:justify-between md:mr-24 md:ml-24">
-          <div className="w-full -mx-6 lg:w-2/5">
+        <div className="lg:flex lg:justify-between lg:items-center md:mr-24 md:ml-24">
+          <div className="w-full -mx-6 lg:w-2/5 ">
             <div className="px-6">
               <Link to="/">
                 <img
-                  className="w-48 md:ml-0 ml-16 text-green-500"
+                  className="w-48"
                   src="/images/transparent-logo.png"
                   alt=""
                 />

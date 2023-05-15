@@ -29,7 +29,8 @@ const Home = () => {
       <div>
         <Features />
       </div>
-      <div className="container">
+
+      {/* <div className="container">
         <div className="background-image">
           <div className="content">
             <h2 className="text-4xl font-light">BUSINESS LOANS</h2>
@@ -51,7 +52,36 @@ const Home = () => {
           </div>
         </div>
         <div className="background-overlay"></div>
+      </div> */}
+      <div
+        className="hero"
+        style={{
+          backgroundImage: `url("/images/feature.jpg")`,
+        }}
+      >
+        <div className="hero-overlay bg-opacity-60"></div>
+        <div className="hero-content text-center text-neutral-content">
+          <div className="max-w-md">
+            <h2 className="text-4xl font-light">BUSINESS LOANS</h2>
+            <p className="pt-4 pb-4 text-lg">$1,000 UP TO $3,000,000</p>
+            <p className="text-sm pb-6">
+              General Merchant Funding has been providing real solutions to
+              small and medium businesses throughout the United States through a
+              variety of business loans since 2009. Our funding advisors have
+              the product knowledge and years of experience to help you get
+              approved. Don’t be embarrassed by bad credit, we understand and
+              are here to provide the funding your business needs.
+            </p>
+            <Link
+              to="/gmf-application"
+              className="inline-flex text-white bg-dark border-0 py-2 px-6 focus:outline-none hover:bg-sky-900 rounded text-lg"
+            >
+              Start your aplication
+            </Link>
+          </div>
+        </div>
       </div>
+
       <div className="reviews">
         <section className="text-gray-600 body-font">
           <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">

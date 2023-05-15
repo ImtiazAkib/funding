@@ -1,5 +1,5 @@
 .new-container {
-  top: 180px;
+  top: 162px;
   margin-bottom: 200px;
 }
 
@@ -67,6 +67,8 @@
 .background-image {
   background-image: url("../../../public/images/feature.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   background-size: cover;
   background-color: #000;
@@ -92,7 +94,7 @@
 
 @media screen and (max-width: 650px) {
   .new-container {
-    top: 120px;
+    top: 80px;
   }
   .carousel-form {
     position: relative;
