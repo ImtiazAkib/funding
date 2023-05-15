@@ -3,10 +3,8 @@ import React from "react";
 const Reviews = () => {
   return (
     <div>
-      <div className="pl-10 pr-10">
-        <h2 className="text-xl mt-10 text-green-500">
-          “FUNDING A BUSINESS IN CT”
-        </h2>
+      <div className="pl-10 pr-10 md:mt-64 mt-40">
+        <h2 className="text-xl mt-10 text-light">“FUNDING A BUSINESS IN CT”</h2>
         <p className="text-gray-500 text-sm mt-5">
           General Merchant Funding named top 10 for
         </p>
@@ -48,7 +46,7 @@ const Reviews = () => {
                   again in the future and please feel free to stay in touch with
                   us. -Ron S., Optical Supplier
                 </p>
-                <span className="inline-block h-1 w-10 rounded bg-green-500 mt-6 mb-4"></span>
+                <span className="inline-block h-1 w-10 rounded bg-color mt-6 mb-4"></span>
                 <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">
                   HOLDEN CAULFIELD
                 </h2>
@@ -73,7 +71,7 @@ const Reviews = () => {
                   again in the future and please feel free to stay in touch with
                   us. -Ron S., Optical Supplier
                 </p>
-                <span className="inline-block h-1 w-10 rounded bg-green-500 mt-6 mb-4"></span>
+                <span className="inline-block h-1 w-10 rounded bg-color mt-6 mb-4"></span>
                 <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">
                   ALPER KAMU
                 </h2>
@@ -98,7 +96,7 @@ const Reviews = () => {
                   again in the future and please feel free to stay in touch with
                   us. -Ron S., Optical Supplier
                 </p>
-                <span className="inline-block h-1 w-10 rounded bg-green-500 mt-6 mb-4"></span>
+                <span className="inline-block h-1 w-10 rounded bg-color mt-6 mb-4"></span>
                 <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">
                   HENRY LETHAM
                 </h2>

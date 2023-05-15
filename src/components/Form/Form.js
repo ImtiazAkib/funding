@@ -12,7 +12,7 @@ const Form = (props) => {
   return (
     <div>
       <form onSubmit={handleSubmit(onSubmit)} className=" text-white">
-        <div className="form-title">
+        <div className="form-title bg-dark">
           <h2>Get Funded in 24 Hours or Less</h2>
         </div>
         <div className="form-container bg-color">

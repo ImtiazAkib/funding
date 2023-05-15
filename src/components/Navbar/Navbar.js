@@ -10,7 +10,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const navbarHeight = 220;
+      const navbarHeight = 0;
       const scrollPosition = window.pageYOffset;
 
       if (scrollPosition > navbarHeight) {
@@ -30,15 +30,9 @@ const Navbar = () => {
   return (
     <>
       <div className={`responsive-nav ${isSticky ? "sticky" : ""}`}>
-        <div className={`head-container ${isSticky ? "new-container" : ""}`}>
+        <div className={`head-container`}>
           <div className={`head-top ${isSticky ? "new-top" : ""}`}>
-            <img
-              src={`${
-                isSticky ? "/images/transparent-logo.png" : "/images/logo.png"
-              }`}
-              alt="logo"
-              className="logo"
-            />
+            <img src="/images/logo.png" alt="logo" className="logo" />
           </div>
         </div>
         <div className="">
@@ -99,9 +93,7 @@ const Navbar = () => {
           </div>
         </div>
         <ul
-          className={`dropdown bg-green-900 ${
-            dropShow ? "dropShow" : "dropHide"
-          }`}
+          className={`dropdown bg-color ${dropShow ? "dropShow" : "dropHide"}`}
           onMouseEnter={() => setDropShow(true)}
           onMouseLeave={() => setDropShow(false)}
         >

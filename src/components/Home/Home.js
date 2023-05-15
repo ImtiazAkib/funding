@@ -9,7 +9,7 @@ import { formForState } from "../../info";
 const Home = () => {
   return (
     <div>
-      <div className="relative">
+      <div className={`relative new-container`}>
         <Carousel autoSlideInterval={5000} />
         <div className="autoplay"></div>
         <p className="carousel-info">
@@ -42,7 +42,10 @@ const Home = () => {
               approved. Don’t be embarrassed by bad credit, we understand and
               are here to provide the funding your business needs.
             </p>
-            <Link className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
+            <Link
+              to="/gmf-application"
+              className="inline-flex text-white bg-dark border-0 py-2 px-6 focus:outline-none hover:bg-sky-900 rounded text-lg"
+            >
               Start your aplication
             </Link>
           </div>
@@ -70,7 +73,10 @@ const Home = () => {
                 direction to get grow your business.
               </p>
               <div className="flex justify-center">
-                <Link className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
+                <Link
+                  to="/gmf-application"
+                  className="inline-flex text-white bg-dark border-0 py-2 px-6 focus:outline-none hover:bg-sky-900 rounded text-lg"
+                >
                   Start your aplication
                 </Link>
               </div>

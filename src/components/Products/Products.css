@@ -3,7 +3,7 @@
 }
 
 .products-links ul a {
-  color: #168806;
+  color: #424171;
   font-size: 20px;
   font-weight: 400;
   display: block;
@@ -22,7 +22,7 @@
   border-style: solid;
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent white;
-  background-color: #168806;
+  background-color: #424171;
 }
 
 @media screen and (max-width: 650px) {

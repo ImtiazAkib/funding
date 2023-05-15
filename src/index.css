@@ -23,6 +23,22 @@ body {
 
 /* Common Style */
 
+.bg-dark {
+  background-color: #142951;
+}
+
+.bg-color {
+  background-color: #424171;
+}
+
+.text-light {
+  color: #424171;
+}
+
+.text-dark {
+  color: #142951;
+}
+
 .common-page-container div p {
   width: 70ch;
 }

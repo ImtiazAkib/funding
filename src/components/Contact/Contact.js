@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section className="bg-white dark:bg-gray-900 md:mt-64 mt-28 mb-28">
       <div className="container px-6 py-10 mx-auto">
         <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
           BUILDING SUCCESSFUL RELATIONSHIPS
@@ -22,7 +22,7 @@ const Contact = () => {
 
         <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-3">
           <div className="flex flex-col items-center p-6 space-y-3 text-center bg-gray-100 rounded-xl dark:bg-gray-800">
-            <span className="inline-block p-3 text-green-500 bg-green-100 rounded-full dark:text-white dark:bg-green-500">
+            <span className="inline-block p-3 text-white bg-green-100 rounded-full dark:text-white bg-color">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-6 h-6"
@@ -53,14 +53,14 @@ const Contact = () => {
 
             <Link
               to=""
-              className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
+              className="inline-flex text-white bg-color border-0 py-2 px-6 focus:outline-none  rounded text-lg"
             >
               Reach Out
             </Link>
           </div>
 
           <div className="flex flex-col items-center p-6 space-y-3 text-center bg-gray-100 rounded-xl dark:bg-gray-800">
-            <span className="inline-block p-3 text-green-500 bg-green-100 rounded-full dark:text-white dark:bg-green-500">
+            <span className="inline-block p-3 text-white bg-green-100 rounded-full dark:text-white bg-color">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-6 h-6"
@@ -90,14 +90,14 @@ const Contact = () => {
 
             <Link
               to=""
-              className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
+              className="inline-flex text-white bg-color border-0 py-2 px-6 focus:outline-none rounded text-lg"
             >
               Apply Now
             </Link>
           </div>
 
           <div className="flex flex-col items-center p-6 space-y-3 text-center bg-gray-100 rounded-xl dark:bg-gray-800">
-            <span className="inline-block p-3 text-green-500 bg-green-100 rounded-full dark:text-white dark:bg-green-500">
+            <span className="inline-block p-3 text-white bg-green-100 rounded-full dark:text-white bg-color">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-6 h-6"
@@ -128,7 +128,7 @@ const Contact = () => {
 
             <Link
               to="/partnership-programs"
-              className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
+              className="inline-flex text-white bg-color border-0 py-2 px-6 focus:outline-none  rounded text-lg"
             >
               Become a Partner
             </Link>

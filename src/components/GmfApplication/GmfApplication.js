@@ -10,7 +10,7 @@ const GmfApplication = () => {
   } = useForm();
   const onSubmit = (data) => console.log(data);
   return (
-    <div className="gmf-container md:flex justify-evenly mt-8 md:pl-9">
+    <div className="gmf-container md:flex justify-evenly  md:mt-64 mt-40 md:pl-9">
       <div className="gmf-left">
         <h1 className="text-3xl mb-7">
           LET OUR TEAM START WORKING FOR YOU TODAY!
@@ -134,7 +134,7 @@ const GmfApplication = () => {
               <input {...register("phone")} />
             </div>
 
-            <input type="submit" className="message-btn uppercase" />
+            <input type="submit" className="message-btn uppercase bg-color" />
           </div>
         </form>
       </div>

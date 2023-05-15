@@ -1,6 +1,8 @@
-.bg-color {
-  background-color: #168806;
+.new-container {
+  top: 180px;
+  margin-bottom: 200px;
 }
+
 .autoplay {
   position: absolute;
   top: 0;
@@ -13,9 +15,10 @@
 .carousel-info {
   position: absolute;
   top: 300px;
-  font-size: 40px;
-  width: 40ch;
-  padding-left: 100px;
+  font-size: 60px;
+  width: 20ch;
+  font-weight: 700;
+  padding-left: 50px;
   color: #fff;
   text-shadow: 2px 0px 4px rgba(206, 89, 55, 0.7);
 }
@@ -31,7 +34,7 @@
 .moving-sentence {
   overflow: hidden;
   white-space: nowrap;
-  background-color: #f38209;
+  background-color: #ffc200;
   padding: 10px 0px;
 }
 
@@ -58,6 +61,7 @@
 
 .container {
   position: relative;
+  width: 100%;
 }
 
 .background-image {
@@ -87,14 +91,17 @@
 }
 
 @media screen and (max-width: 650px) {
+  .new-container {
+    top: 120px;
+  }
   .carousel-form {
     position: relative;
     top: 0;
   }
   .carousel-info {
-    padding: 0;
-    width: 30ch;
-    font-size: 20px;
+    padding-left: 10px;
+    width: 20ch;
+    font-size: 25px;
     top: 200px;
   }
   .carousel {

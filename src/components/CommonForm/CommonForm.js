@@ -38,7 +38,9 @@ const CommonForm = (props) => {
             {props.info.options && (
               <select {...register(props.info.reg)} className="green-select">
                 {props.info.options.map((option) => (
-                  <option value={option}>{option}</option>
+                  <option key={Math.random() * 10} value={option}>
+                    {option}
+                  </option>
                 ))}
               </select>
             )}
@@ -69,7 +71,7 @@ const CommonForm = (props) => {
           <input
             type="submit"
             value="Send message"
-            className="message-btn uppercase"
+            className="message-btn uppercase bg-color"
           />
         </div>
       </form>

@@ -20,7 +20,7 @@
   border: 1px solid gray;
   padding: 5px 10px;
   margin: 10px 0px;
-  color: #168806;
+  color: #424171;
 }
 
 .common-single-box input:focus,
@@ -36,7 +36,6 @@
 
 .message-btn {
   width: 100%;
-  background-color: #168806;
   padding: 15px 0px;
   margin-top: 10px;
   color: #fff;

@@ -6,7 +6,6 @@
 
 .form-title {
   font-size: 20px;
-  background-color: #045930;
   width: 395px;
   text-align: center;
   padding: 20px 0px;
@@ -55,7 +54,7 @@
 
 .submit-btn {
   width: 100%;
-  background-color: #f38209;
+  background-color: #ffc200;
   padding: 15px 0px;
   margin-top: 10px;
 }

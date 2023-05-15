@@ -1,10 +1,9 @@
 import React from "react";
 import "./About.css";
-import { NavLink } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className=" flex flex-col mt-24 mb-24 about">
+    <div className=" flex flex-col  md:mt-64 mt-40 mb-24 about">
       <div className="about-head">
         <h1 className="text-5xl uppercase pb-8">PRODUCTS</h1>
         <h2 className="text-3xl pb-7">BUSINESS FUNDING</h2>
