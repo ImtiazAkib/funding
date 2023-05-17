@@ -12,7 +12,7 @@ const CommonForm = (props) => {
   } = useForm();
   const onSubmit = (data) => {
     emailjs
-      .send("service_5v84lzc", "template_cvs6rwg", data, "f8WQ6GcdeFOqe3dMj")
+      .send("service_m8rltto", "template_cvs6rwg", data, "f8WQ6GcdeFOqe3dMj")
       .then((res) => console.log("ok"))
       .catch((err) => console.log(err));
     reset();

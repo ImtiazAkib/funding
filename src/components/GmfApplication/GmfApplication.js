@@ -13,7 +13,7 @@ const GmfApplication = () => {
 
   const onSubmit = (data) => {
     emailjs
-      .send("service_5v84lzc", "template_bhm28fq", data, "f8WQ6GcdeFOqe3dMj")
+      .send("service_m8rltto", "template_bhm28fq", data, "f8WQ6GcdeFOqe3dMj")
       .then((res) => console.log("ok"))
       .catch((err) => console.log(err));
     reset();

@@ -5,7 +5,7 @@ import { formForState } from "../../info";
 
 const PartnershipPrograms = () => {
   return (
-    <div className="contact-container md:flex justify-evenly mb-9 md:mt-64 mt-40">
+    <div className="contact-container md:flex flex-wrap justify-evenly mb-9 md:mt-64 mt-40">
       <div>
         <h1 className="text-4xl">PARTNERSHIP PROGRAMS</h1>
         <h2 className="text-2xl mt-10">BUILDING SUCCESSFUL RELATIONSHIPS</h2>
@@ -23,7 +23,7 @@ const PartnershipPrograms = () => {
           building a successful relationship!
         </p>
       </div>
-      <div>
+      <div className="md:mt-8">
         <CommonForm info={formForState} />
       </div>
     </div>

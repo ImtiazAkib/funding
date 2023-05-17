@@ -1,6 +1,5 @@
 .common-form-container {
   width: 495px;
-
   padding: 20px 50px;
 }
 
@@ -44,10 +43,14 @@
 .message-btn:hover {
   cursor: pointer;
 }
+
 @media screen and (max-width: 650px) {
   .common-form-container {
     padding: 10px 20px;
     width: 100%;
     margin-top: 40px;
   }
+}
+
+@media (min-width: 900px) and (max-width: 1024px) {
 }

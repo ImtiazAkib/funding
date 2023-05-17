@@ -4,7 +4,7 @@ import { formForCall } from "../../info";
 
 const CommonPage = (props) => {
   return (
-    <div className="common-page-container md:flex justify-evenly md:mt-64 mt-40 mb-9">
+    <div className="common-page-container md:flex justify-evenly flex-wrap md:mt-64 mt-40 mb-9">
       <div>
         {props.info.title && <h1 className="text-4xl">{props.info.title}</h1>}
         {props.info.title2 && (
@@ -76,7 +76,7 @@ const CommonPage = (props) => {
           </div>
         )}
       </div>
-      <div>
+      <div className="md:mt-8">
         <CommonForm info={formForCall} />
       </div>
     </div>

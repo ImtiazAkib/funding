@@ -45,7 +45,7 @@ const IdentityTheft = () => {
             </div>
             <div className="flex flex-wrap -m-4">
               <div
-                className="md:flex-1 m-4 text-center border rounded-lg"
+                className="lg:flex-1 m-4 text-center border rounded-lg"
                 style={{ boxShadow: "var(--light-shadow)" }}
               >
                 <div className=" p-6 h-full">
@@ -73,7 +73,7 @@ const IdentityTheft = () => {
                 </div>
               </div>
               <div
-                className="md:flex-1 m-4 text-center border rounded-lg"
+                className="lg:flex-1 m-4 text-center border rounded-lg"
                 style={{ boxShadow: "var(--light-shadow)" }}
               >
                 <div className=" p-6 ">
@@ -105,7 +105,7 @@ const IdentityTheft = () => {
                 </div>
               </div>
               <div
-                className="md:flex-1 m-4 text-center border rounded-lg"
+                className="lg:flex-1 m-4 text-center border rounded-lg"
                 style={{ boxShadow: "var(--light-shadow)" }}
               >
                 <div className=" p-6  h-full">
@@ -136,7 +136,7 @@ const IdentityTheft = () => {
                 </div>
               </div>
               <div
-                className="md:flex-1 m-4 text-center border rounded-lg"
+                className="lg:flex-1 m-4 text-center border rounded-lg"
                 style={{ boxShadow: "var(--light-shadow)" }}
               >
                 <div className=" p-6  h-full">

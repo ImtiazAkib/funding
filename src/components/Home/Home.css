@@ -113,3 +113,17 @@
     display: none;
   }
 }
+
+@media (min-width: 900px) and (max-width: 1024px) {
+  .carousel-info {
+    padding-left: 10px;
+    width: 25ch;
+    font-size: 30px;
+    top: 300px;
+  }
+  .carousel-form {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+  }
+}

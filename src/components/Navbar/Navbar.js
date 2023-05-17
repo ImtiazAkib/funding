@@ -32,11 +32,13 @@ const Navbar = () => {
       <div className={`responsive-nav ${isSticky ? "sticky" : ""}`}>
         <div className={`head-container`}>
           <div className={`head-top ${isSticky ? "new-top" : ""}`}>
-            <img
-              src="/images/transparent-logo.png"
-              alt="logo"
-              className="logo"
-            />
+            <NavLink to="/">
+              <img
+                src="/images/transparent-logo.png"
+                alt="logo"
+                className="logo"
+              />
+            </NavLink>
           </div>
         </div>
         <div className="">
@@ -63,6 +65,7 @@ const Navbar = () => {
               <NavLink
                 className={({ isActive }) => (isActive ? "active" : "")}
                 to="/products"
+                onClick={() => setDropShow(!dropShow)}
                 onMouseEnter={() => setDropShow(true)}
                 onMouseLeave={() => setDropShow(false)}
               >
@@ -97,7 +100,9 @@ const Navbar = () => {
           </div>
         </div>
         <ul
-          className={`dropdown bg-color ${dropShow ? "dropShow" : "dropHide"}`}
+          className={`dropdown bg-dark ${dropShow ? "dropShow" : "dropHide"} ${
+            isSticky ? "new-drop-show" : ""
+          }`}
           onMouseEnter={() => setDropShow(true)}
           onMouseLeave={() => setDropShow(false)}
         >
