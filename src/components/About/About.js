@@ -41,8 +41,8 @@ const About = () => {
           our main goal. This has always been to provide REAL business solutions
           for the people who need them. We strive to work efficiently, honestly
           and without prejudice. This customer driven formula has proven itself
-          time and time again. Put your trust in General Merchant Funding to
-          help your company thrive and grow today.
+          time and time again. Put your trust in Kesef Capital Group to help
+          your company thrive and grow today.
         </p>
       </div>
     </div>

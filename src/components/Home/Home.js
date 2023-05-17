@@ -17,9 +17,8 @@ const Home = () => {
         </p>
         <div className="moving-sentence">
           <div className="moving-sentence__text">
-            Put your trust in General Merchant Funding to help your company
-            thrive and grow today. Bad credit, no problem, we provide real
-            solutions.
+            Put your trust in Kesef Capital Group to help your company thrive
+            and grow today. Bad credit, no problem, we provide real solutions.
           </div>
         </div>
         <div className="carousel-form">
@@ -41,10 +40,10 @@ const Home = () => {
             <h2 className="text-4xl font-light">BUSINESS LOANS</h2>
             <p className="pt-4 pb-4 text-lg">$1,000 UP TO $3,000,000</p>
             <p className="text-sm pb-6">
-              General Merchant Funding has been providing real solutions to
-              small and medium businesses throughout the United States through a
-              variety of business loans since 2009. Our funding advisors have
-              the product knowledge and years of experience to help you get
+              Kesef Capital Group has been providing real solutions to small and
+              medium businesses throughout the United States through a variety
+              of business loans since 2009. Our funding advisors have the
+              product knowledge and years of experience to help you get
               approved. Don’t be embarrassed by bad credit, we understand and
               are here to provide the funding your business needs.
             </p>

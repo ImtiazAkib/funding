@@ -11,9 +11,8 @@ const Features = () => {
             </h1>
 
             <p className="max-w-lg mx-auto mt-4 text-gray-500">
-              Put your trust in General Merchant Funding to help your company
-              thrive and grow today. Bad credit, no problem, we provide real
-              solutions.
+              Put your trust in Kesef Capital Group to help your company thrive
+              and grow today. Bad credit, no problem, we provide real solutions.
             </p>
           </div>
 

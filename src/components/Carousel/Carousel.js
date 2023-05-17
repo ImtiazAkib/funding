@@ -3,13 +3,13 @@ import React, { useEffect, useState } from "react";
 function App({ autoSlideInterval }) {
   const slides = [
     {
-      url: "/images/img1.JPG",
+      url: "/images/img1.jpg",
     },
     {
-      url: "/images/img2.JPG",
+      url: "/images/img2.jpg",
     },
     {
-      url: "/images/img3.JPG",
+      url: "/images/img3.jpg",
     },
   ];
 

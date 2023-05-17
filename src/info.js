@@ -4,7 +4,7 @@ export const unsecuredLoans = {
   title3: "ABOUT OUR UNSECURED LOANS",
   title4: "BAD CREDIT, NO PROBLEM",
   infoT4:
-    "When considering applicants for our unsecured loans, General Merchant Funding judges the health of your business based on your cash flow-not just your credit scores. Unlike Cash Advance options,  we are evaluating your gross deposit, average daily balances and overall cash activity. These programs offer the controlled structure many business owners prefer, fixed payments and set terms. These programs also help build business credit and are tax deductible.",
+    "When considering applicants for our unsecured loans, Kesef Capital Group judges the health of your business based on your cash flow-not just your credit scores. Unlike Cash Advance options,  we are evaluating your gross deposit, average daily balances and overall cash activity. These programs offer the controlled structure many business owners prefer, fixed payments and set terms. These programs also help build business credit and are tax deductible.",
   infoT3: [
     "Loans ranging from $1,000 – $2,000,000",
     "3 – 18 month terms",
@@ -61,14 +61,14 @@ export const debtConsolidation = {
   title: "DEBT CONSOLIDATION",
   title2: "CONSOLIDATE YOUR DEBT AND GROW YOUR BUSINESS",
   infoT2:
-    "For those with either business credit card or loan debt, the business debt consolidation programs are a solid option. When you are a business owner, there are going to be times when you are working with multiple credit sources. This is just the nature of the beast, because you have to have cash flow and you need to be able to get your hands on money right away.Having multiple credit accounts can just be too much. This is where business debt consolidation comes in handy. Having one loan to pay down instead of multiple loans will give you a better idea of when you are going to have everything paid off.Much of business is about planning, so using debt consolidation services will allow you to plan for the future better. What you will find is that General Merchant Funding will look after your needs as a business and we provide services that are very valuable.For owners who have multiple loans with high rates, using General Merchant Funding’s business debt consolidation will lower rates and grow your bottom line.",
+    "For those with either business credit card or loan debt, the business debt consolidation programs are a solid option. When you are a business owner, there are going to be times when you are working with multiple credit sources. This is just the nature of the beast, because you have to have cash flow and you need to be able to get your hands on money right away.Having multiple credit accounts can just be too much. This is where business debt consolidation comes in handy. Having one loan to pay down instead of multiple loans will give you a better idea of when you are going to have everything paid off.Much of business is about planning, so using debt consolidation services will allow you to plan for the future better. What you will find is that Kesef Capital Group will look after your needs as a business and we provide services that are very valuable.For owners who have multiple loans with high rates, using Kesef Capital Group’s business debt consolidation will lower rates and grow your bottom line.",
 };
 export const creditRepair = {
   title: "CREDIT REPAIR",
   title2: "TAKE THE FIRST STEP TO IMPROVING YOUR CREDIT!",
   title3: "HOW DOES THIS WORK?",
   infoT2:
-    "General Merchant Funding has partnered with Ovation a Lending Tree a company to offer customization, flexibility and the power of options that suit your exact needs.Our partners work with credit bureaus and creditors to resolve issues with your credit reports. We strive to ensure your credit report is the best it can be.",
+    "Kesef Capital Group has partnered with Ovation a Lending Tree a company to offer customization, flexibility and the power of options that suit your exact needs.Our partners work with credit bureaus and creditors to resolve issues with your credit reports. We strive to ensure your credit report is the best it can be.",
   infoT3: [
     "Sign-Up: Once signed up, you’ll work one-on-one with your Personal Case Advisor, activating the Dispute Manager and marking your credit report discrepancies.",
     "Dispute Process: With our credit expertise and innovative electronic disputing system, we work on your behalf disputing your inaccurate credit report items.",

@@ -6,7 +6,7 @@ const Reviews = () => {
       <div className="pl-10 pr-10 md:mt-64 mt-40">
         <h2 className="text-xl mt-10 text-light">“FUNDING A BUSINESS IN CT”</h2>
         <p className="text-gray-500 text-sm mt-5">
-          General Merchant Funding named top 10 for
+          Kesef Capital Group named top 10 for
         </p>
         <p className="text-gray-500 text-sm mt-5">“Funding a Business in CT”</p>
         <p className="text-gray-500 text-sm mt-5">

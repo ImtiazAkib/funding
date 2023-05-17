@@ -10,14 +10,13 @@ const Contact = () => {
           BUILDING SUCCESSFUL RELATIONSHIPS
         </h1>
         <p className="text-gray-500 text-sm mt-5">
-          General Merchant Funding takes pride in the large variety of
-          relationships we have been able to build and maintain through the
-          years. We have worked with a variety of different businesses, from
-          industry leaders in cash advance to the smaller mom and pop shops. We
-          value every relationship and, no matter how large or small, you are
-          our top priority. Contact General Merchant Funding today to learn more
-          about the programs we offer and how you too can be a part of our great
-          success.
+          Kesef Capital Group takes pride in the large variety of relationships
+          we have been able to build and maintain through the years. We have
+          worked with a variety of different businesses, from industry leaders
+          in cash advance to the smaller mom and pop shops. We value every
+          relationship and, no matter how large or small, you are our top
+          priority. Contact Kesef Capital Group today to learn more about the
+          programs we offer and how you too can be a part of our great success.
         </p>
 
         <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-3">

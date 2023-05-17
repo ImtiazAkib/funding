@@ -8,9 +8,7 @@ const Products = () => {
       <div className="about-head">
         <h1 className="text-5xl uppercase pb-8">About us</h1>
         <h2 className="text-3xl pb-7">BUSINESS FINANCING OPTIONS</h2>
-        <h3 className="text-base">
-          PUT YOUR TRUST IN GENERAL MERCHANT FUNDING
-        </h3>
+        <h3 className="text-base">PUT YOUR TRUST IN Kesef Capital Group</h3>
       </div>
       <div className="md:flex  md:w-4/5 self-center text-sm leading-6">
         <p className="md:pr-5 products-info">
